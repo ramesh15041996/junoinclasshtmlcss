@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MindfullCoder</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            .banner{
+                background-image:linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("https://www.letsroam.com/explorer/wp-content/uploads/sites/10/2021/08/meditation-at-work.jpg");
+                background-repeat: no-repeat;
+                height: 100vh;
+                width: 100vw;
+                background-position: center;
+                background-size: cover;
+
+            
+            }
+            .navbar{
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo{
+                width:120px;
+                cursor:pointer;
+                border:2px solid whitesmoke;
+
+               
+            }
+            .navbar ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+
+            }
+            .navbar ul li a{
+                   text-decoration: none;
+                   color: #fff;
+                   text-transform: uppercase;
+            }
+            .navbar ul li::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #009688;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transition: 0.5s;
+            }
+            .navbar ul li:hover::after{
+                         width:100%;
+                }
+                .content{
+                    width:100%;
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    text-align: center;
+                    color: #fff;
+                }
+                .content h1{
+                    font-size: 70px;
+                    margin-top: 80px;
+                }
+                .content p{
+                    margin: 20px auto;
+                    font-weight: 100;
+                    line-height: 25px;
+                }
+                button{
+                    width:200px;
+                    padding: 15px 0;
+                    text-align: center;
+                    margin: 20px 10px;
+                    border-radius: 25px;
+                    font-weight: bold;
+                    border: 2px solid #009688;
+                    background: transparent;
+                    color: #fff;
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                }
+                span{
+                    background: #009688;
+                    height: 100%;
+                    width: 0;
+                    border-radius: 25px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    transition: 0.5s;
+                }
+                button:hover span{
+                    width: 100%;
+                }
+                button:hover{
+                    border: none;
+                }
+            
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img width="75" height="75" src="https://ih1.redbubble.net/image.106792780.3603/st,small,507x507-pad,600x600,f8f8f8.u3.jpg" class="logo">
+                 <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Discover</a></li>
+                     <li><a href="#">Profile</a></li>
+                     <li><a href="#">Premium</a></li>
+                      
+                 </ul>
+            </div>
+                 <div class="content">
+                    <h1>MEDITATE AND PROGRAM</h1>
+                    <p>The happy secret to better programming.</p>
+                    <div>
+                        <a href="C:\Users\Administrator\juno\img.html"><button type="button"><span></span>JOIN US</button></a>
+                        <button type="button"><span></span>WATCH MORE</button>
+                    </div> 
+             </div>
+        </div>
+    </body>
+</html>
